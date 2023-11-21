@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/Team-Clean.css">
 
 <body>
-    <div class="highlight-clean" style="padding-bottom: 10px;">
+    <div class="highlight-clean" style="padding-bottom: 10px; padding-top: 10px;">
             <h1 class="text-center">LIMIT: Less Is More for Instruction Tuning Across Evaluation Paradigms</h1>
         <div><p></p></div>
         <div class="container" style="max-width: 768px;background:white;">
@@ -49,26 +49,8 @@
         </div>
     </div>
     <script>
-        
-const spinnerTexts = document.querySelectorAll('[class^="spinner__text--"]')
-const texts = spinnerTexts[0].dataset.texts.split(',')
-const textPositions = [0, 1]
-
-function initializeSpinnerTexts() {
-  spinnerTexts.forEach((spinnerText, index) => {
-    // Initialize the spinner texts' text
-    spinnerText.innerText = texts[textPositions[index]]
-    
-    // Change text after every animation iteration
-    spinnerText.addEventListener('animationiteration', e => {
-      e.target.innerText = texts[++textPositions[index] % texts.length]
-    })
-  })
-}
-
-window.onload = initializeSpinnerTexts
     </script>
-    <style>
+    <!-- <style>
         body {
             font-family: 'Source Sans Pro', sans-serif;
             margin: 0;
@@ -125,107 +107,7 @@ window.onload = initializeSpinnerTexts
         .api-appstore {
             margin-bottom: 20px;
         }
-
-
-        .spinner {
-  position: relative; /* Change to relative for responsiveness */
-  overflow: hidden;
-}
-
-.spinner__text {
-  position: relative;
-  display: inline-block;
-  width: 50px; /* Adjust the width as needed */
-  text-align: center;
-}
-
-.spinner__text--top,
-.spinner__text--bottom {
-  display: inline-block;
-  animation: 1s ease 1.05s infinite running none;
-}
-
-.spinner__text--top {
-  animation-name: spinTop;
-}
-
-/* Bottom text spinner has to be configured so that it is positioned
-right at the same position as the top one */
-.spinner__text--bottom {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  animation-name: spinBottom;
-}
-
-@keyframes spinTop {
-  from { transform: translateY(0%); }
-  to { transform: translateY(-100%); }
-}
-
-@keyframes spinBottom {
-  from {
-    opacity: 1;
-    transform: translateY(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-
-@media screen and (max-width: 768px) {
-    .spinner {
-  position: relative; /* Change to relative for responsiveness */
-  overflow: hidden;
-}
-
-.spinner__text {
-  position: relative;
-  display: inline-block;
-  width: 50px; /* Adjust the width as needed */
-  text-align: center;
-}
-
-.spinner__text--top,
-.spinner__text--bottom {
-  display: inline-block;
-  animation: 1.5s ease 2s infinite running none;
-}
-
-.spinner__text--top {
-  animation-name: spinTop;
-}
-
-/* Bottom text spinner has to be configured so that it is positioned
-right at the same position as the top one */
-.spinner__text--bottom {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  animation-name: spinBottom;
-}
-
-@keyframes spinTop {
-  from { transform: translateY(0%); }
-  to { transform: translateY(-100%); }
-}
-
-@keyframes spinBottom {
-  from {
-    opacity: 1;
-    transform: translateY(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-}
-
-    </style>
+    </style> -->
 
 <!-- Abstract -->
 <div class="container" style="max-width: 768px;">
