@@ -1,61 +1,54 @@
 body {
-  margin: 0;
-  background-image: url(background-image.jpg);
-  background-size: cover;
-  background-position: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-p {
-    display: block;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+header {
+    background-color: #2E4053;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-a {
-  color: white;
+nav {
+    background-color: #34495E;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
-.viewport {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+section {
+    padding: 20px;
 }
 
-.text-box {
-  height: auto;
-  width: auto;
-  margin: 1vh;
-  background-color: white;
-  border-radius: 1vh;
-  justify-content: center;
-  align-items: center;
-  border: 0.25vh solid #808080;
+footer {
+    background-color: #2E4053;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-.title {
-  font-size: 6vh;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  padding: 1vh;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-.subtitle {
-  font-size: 4vh;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  padding: 0 1vh 1vh 1vh;
+nav a:hover {
+    text-decoration: underline;
 }
 
-.footer {
-  font-size: 1vh;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  padding: 0 1vh 1vh 1vh;
-  color: white;
-  position: absolute;
-  bottom: 0;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Add additional styling as needed */
