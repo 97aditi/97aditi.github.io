@@ -4,51 +4,68 @@ body {
     padding: 0;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 header {
-    background-color: white;
-    color: black;
-    padding: 20px;
+    background-color: #2E4053;
+    color: white;
+    padding: 20px 0;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0;
 }
 
 nav {
     background-color: #34495E;
     color: white;
-    padding: 10px;
+    padding: 10px 0;
     text-align: center;
 }
 
-section {
-    padding: 20px;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-footer {
-    background-color: #2E4053;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+nav li {
+    display: inline;
+    margin-right: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    font-weight: bold;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+section {
+    padding: 40px 0;
 }
 
-ul li {
-    margin-bottom: 10px;
+section h2 {
+    color: #2E4053;
 }
 
-/* Add additional styling as needed */
+footer {
+    background-color: #2E4053;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
